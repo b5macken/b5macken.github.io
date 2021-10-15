@@ -5,27 +5,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="styles.css">
-
+        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
     </head>
     <body style="margin : 0px; overflow: hidden;">
-      <a-marker 
-          type="pattern" 
-          url="https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/pattern-website-QRCODE.patt"
-          raycaster="objects: clickable"
-          emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;"
-          id="markerA"
+      <a-scene 
+        arjs 
+        embedded 
+        renderer="logarithmicDepthBuffer: true;" 
+        vr-mode-ui="enabled: false" 
+        gesture-director 
+        id="scene"
       >
-        <a-marker
-            preset="hiro"
-            raycaster="objects: .clickable"
-            emitevents="true"
-            cursor="fuse: false; rayOrigin: mouse;"
-            id="markerA"
-        >
+          <a-marker 
+              type="pattern" 
+              url="https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/pattern-website-QRCODE.patt"
+              raycaster="objects: clickable"
+              emitevents="true"
+              cursor="fuse: false; rayOrigin: mouse;"
+              id="markerA"
+          >
           <a-entity
             obj-model="obj: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.obj);
             mtl: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.mtl)"
