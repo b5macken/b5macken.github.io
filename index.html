@@ -12,8 +12,13 @@
         <a-scene embedded arjs renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-director id="scene">
             <a-marker type="pattern" url="https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/pattern-website-QRCODE.patt">
                 <a-entity
-                obj-model="obj: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.obj);
-                mtl: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.mtl)">
+                    obj-model="obj: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.obj);
+                    mtl: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.mtl)"
+                    position="0 0 0"
+                    scale="0.05 0.05 0.05"
+                    class="clickable"
+                    gesture-handler
+                >
                 </a-entity>
                 <a-scene
             </a-marker>
