@@ -19,13 +19,12 @@
         gesture-director 
         id="scene"
       >
-        <a-marker 
-          type="pattern" 
-          url="https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/pattern-website-QRCODE.patt"
-          raycaster="objects: clickable"
-          emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;"
-          id="markerA"
+        <a-marker
+            preset="hiro"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="markerA"
         >
           <a-entity
             obj-model="obj: url(https://raw.githubusercontent.com/b5macken/b5macken.github.io/main/exUbq.obj);
